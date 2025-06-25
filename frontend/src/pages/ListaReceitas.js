@@ -65,7 +65,7 @@ function ListaReceitas() {
             </div>
             <p className="category"><strong>Categoria:</strong> {receita.categoria}</p>
             <div className="card-buttons">
-              <Link to={`/editar/${receita._id}`} className="btn btn-edit">Editar</Link>
+              <Link to={`/editar/${receita._id}`} className="btn btn-gren">Editar</Link>
               <button onClick={() => deletarReceita(receita._id)} className="btn btn-delete">Deletar</button>
             </div>
           </div>

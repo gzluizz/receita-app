@@ -86,7 +86,7 @@ function CadastroReceita() {
           onChange={handleChange}
           accept="image/*"
         />
-        <button type="submit">Cadastrar Receita</button>
+        <button type="submit" className="btn btn-gren">Cadastrar Receita</button>
       </form>
       <button onClick={() => navigate(-1)}>Voltar</button> {/* Botão de Voltar */}
     </div>

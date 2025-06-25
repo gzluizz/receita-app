@@ -115,7 +115,7 @@ const handleSubmit = async (e) => {
           onChange={handleChange}
         />
 
-        <button type="submit">Atualizar Receita</button>
+        <button type="submit" className="btn btn-gren">Atualizar Receita</button>
       </form>
 
       <button onClick={() => navigate(-1)}>Voltar</button>

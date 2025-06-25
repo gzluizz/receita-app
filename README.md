@@ -66,8 +66,8 @@ Um sistema web completo para cadastro, listagem, edição e exclusão de receita
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
-cd nome-do-repo
+git clone https://github.com/gzluizz/receita-app.git
+cd receita-app
 ```
 
 ### 2. Instale as dependências

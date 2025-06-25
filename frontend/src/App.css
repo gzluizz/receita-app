@@ -115,12 +115,12 @@ nav h1 {
 }
 
 /* Botão Editar */
-.btn-edit {
+.btn-gren {
   background-color: #28a745;
   color: #fff;
 }
 
-.btn-edit:hover {
+.btn-gren:hover {
   background-color: #218838;
 }
 

@@ -1,0 +1,240 @@
+/* Estilização Global */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+  color: #333;
+}
+
+.container {
+  width: 85%;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegação */
+nav {
+  background-color: #c53708;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+/* Layout de Cards - ListaReceitas */
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  color: #333;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.card .category {
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* ------------------------------
+   Botões com Classes Específicas
+------------------------------- */
+.btn-cadastro {
+  background-color: #ff8753;
+  color: #fff;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Botão genérico base */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 0.95em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+/* Botão Editar */
+.btn-edit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background-color: #218838;
+}
+
+/* Botão Deletar */
+.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Botão Voltar */
+.btn-back {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-back:hover {
+  background-color: #5a6268;
+}
+
+/* Botão de Submissão (Cadastrar / Atualizar) */
+.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Botão Ver Mais (sem herdar estilos globais) */
+.ver-mais-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  padding: 0;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.ver-mais-btn:hover {
+  text-decoration: underline;
+}
+
+/* Estilização do Formulário - Cadastro e Edição */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  color: #333;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Estilização do Link "Cadastrar Nova Receita" */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .lista {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  nav h1 {
+    font-size: 1.2em;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.95em;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}

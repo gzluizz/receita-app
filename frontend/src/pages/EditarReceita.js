@@ -118,7 +118,7 @@ const handleSubmit = async (e) => {
         <button type="submit" className="btn btn-gren">Atualizar Receita</button>
       </form>
 
-      <button onClick={() => navigate(-1)}>Voltar</button>
+      <button onClick={() => navigate(-1)} className="btn btn-back">Voltar</button>
     </div>
   );
 }

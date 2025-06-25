@@ -88,7 +88,7 @@ function CadastroReceita() {
         />
         <button type="submit" className="btn btn-gren">Cadastrar Receita</button>
       </form>
-      <button onClick={() => navigate(-1)}>Voltar</button> {/* Botão de Voltar */}
+      <button onClick={() => navigate(-1)} className="btn btn-back" >Voltar</button> 
     </div>
   );
 }

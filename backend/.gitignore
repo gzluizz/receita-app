@@ -1,0 +1,25 @@
+# Ignorar node_modules em qualquer lugar do projeto
+node_modules/
+
+# Ignorar arquivos .env em qualquer lugar do projeto
+.env
+
+
+# Ignorar arquivos de log
+logs/
+*.log
+
+# Ignorar arquivos de cache
+.cache/
+
+# Ignorar arquivos de configuração do editor
+.vscode/
+.idea/
+
+# Ignorar arquivos de build
+dist/
+build/
+
+# Ignorar arquivos temporários
+tmp/
+temp/

@@ -1,4 +1,4 @@
-# 📖 Sistema de Cadastro de Receitas
+# Sistema de Cadastro de Receitas
 
 Um sistema web completo para cadastro, listagem, edição e exclusão de receitas, com upload e visualização de imagens. Desenvolvido com **React**, **Node.js**, **Express** e **MongoDB**.
 
@@ -103,12 +103,12 @@ npm start
 
 Frontend
 ```bash
-cd ../frontend
+cd frontend
 npm start
 ```
 
 
 ### Upload de Imagens
 
-As imagens são salvas na pasta /uploads
-São exibidas através da rota estática: http://localhost:5000/uploads/nome-da-imagem.jpg
+- As imagens são salvas na pasta /uploads
+- São exibidas através da rota estática: http://localhost:5000/uploads/nome-da-imagem.jpg
